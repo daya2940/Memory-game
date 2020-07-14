@@ -80,6 +80,9 @@ h1 {
     background: #02ccba;
     font-size: 33px;
 }
+.deck .card.disable {
+    pointer-events: none;
+}
 
 /*
  * Styles for the Score Panel
@@ -106,4 +109,185 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+/* Styles for congratulations modal when game is completed*/
+.message {
+    position: fixed;
+    background: rgba(0, 75, 255, 0.4);
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.showup {
+    margin: 72px auto;
+    padding: 21px;
+    background: #fff;
+    border-radius: 6px;
+    width: 88%;
+    position: relative;
+    font-family: 'Fascinate Inline', serif;
+}
+
+.showup h2 {
+    font-family: 'Fascinate Inline', serif;
+}
+
+.showup .close {
+    position: absolute;
+    top: 21px;
+    right: 32px;
+    transition: all 200ms;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.showup .congratulation, .stats {
+    max-height: 50%;
+    overflow: auto;
+    text-align: center;
+}
+
+.show {
+    visibility: visible;
+    opacity: 100;
+}
+
+.message h2 {
+  text-align: center;
+  font-family: 'Fascinate Inline', serif;
+}
+
+header h1{
+  font-family: 'Fascinate Inline', serif;
+}
+
+#star-rating li {
+    display: inline-block;
+}
+
+#play-again {
+    font-family: 'Fascinate Inline', serif;
+    border-radius: 5px;
+    background-color:#96beff;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    width: auto;
+}
+
+
+
+
+/*responsiveness*/
+@media (max-width: 320px) {
+  .deck {
+    width: 75%;
+  }
+
+  .deck .cards {
+    height: 4.7rem;
+    width: 4.7rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /*
+   * Score panel
+   */
+
+   .score-panel {
+    text-align: left;
+    width: 380px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+  /*
+   * Main deck
+   */
+
+  .deck {
+    width: 400px;
+    min-height: 420px;
+    padding: 20px;
+  }
+
+  .deck .card {
+    height: 80px;
+    width: 80px;
+  }
+
+  .deck .card.show {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .material-icons {
+      font-size: 24px;
+    }
+
+    /*
+     * Main deck
+     */
+
+    .deck {
+      width: 300px;
+      min-height: 310px;
+      box-shadow: 6px 7px 10px 0 rgba(46, 61, 73, 0.5);
+      padding: 10px;
+    }
+
+    .deck .card {
+      height: 60px;
+      width: 60px;
+    }
+
+    .deck .card.show {
+      font-size: 18px;
+    }
+
+    .score-panel {
+      padding: 0 0 0 1em;
+    }
+
+    /*
+     * Score panel
+     */
+
+     .score-panel {
+      text-align: left;
+      width: 280px;
+      margin-bottom: 10px;
+      font-size: 1em;
+  }
+    .score-panel .restart {
+      float: right;
+      cursor: pointer;
+    }
+
+    .score-panel .timer {
+      margin-left: 3em;
+    }
+
+@media screen and(min-width: 800) and (min-width: 1280){
+
+     .score-panel {
+      text-align: left;
+      width: 280px;
+      margin-bottom: 10px;
+      font-size: 5em;
+  }
 }

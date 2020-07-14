@@ -1,20 +1,28 @@
 # Memory Game Project
-
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
+download or clone from udacity's github repo
+open index.html and observe the static html page
 To get started, open `js/app.js` and start building out the app's functionality
+it's per your discreation to use predefined css or you can define your own
+the job here is to make it dynamic to do that follow the steps in the code(app.js)
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+>>dependencies used here are
+>>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+>>https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/
+>>https://fonts.googleapis.com/css?family=Coda
 
-## Contributing
+## Features
+- Count your moves
+- Live Stopwatch
+- Rating System [ Based on your **Moves!** ]
+- Retry/Restart the game button
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## How to Play?
+- Click on any card and you will see an image
+- Keep searching for this image's peer in other cards
+- When you find the right one, both of them will stay flipped
+- If you didn't find it, both of them will be darkened  again
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+> Try to find the pairs in as less moves as possible to get a better rate!
+>> contribute here https://codepen.io/sau3681/pen/yqzEMP
+
+
